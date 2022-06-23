@@ -1,0 +1,97 @@
+body{
+    margin: 0;
+}
+/*************titulo*************/
+.titulo{
+    display: inline-block;
+    color: #fefefe;
+}
+.logo{
+    display: inline-block;
+    vertical-align: top;
+}
+.principal{
+    text-align: center;
+    background-color: #9500e6;
+}
+nav{
+    box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.2);
+}
+/*************menu horizontal*************/
+header{
+    position: sticky;
+    top: 0;
+    width: 100%;
+}
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #a600ff;
+}
+li{
+    float: left;
+}
+li a, .fixo{
+    display: block;
+    color: #fefefe;
+    text-align: center;
+    padding: 14px 16px ;
+    text-decoration: none;
+}
+li a:hover, .oi:hover .horizontal{
+  background-color: #530080;  
+}
+/*************lista suspensa*************/
+li.oi{
+	display: inline-block;
+}
+.fixo{
+	display: none;
+	position: absolute;
+	background-color: #cecece;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+.fixo a{
+	color: #000000;
+	padding: 10px;
+	text-decoration: none;
+	display: block;
+	text-align: left;
+}
+.fixo a:hover {
+	background-color: #9500e6;
+    color: #fefefe;
+}
+.oi:hover .fixo{
+	display: block;
+}
+/* flex */
+.album{
+	display: flex;
+	flex-wrap: wrap;
+	text-align: center;
+	justify-content: center;
+}
+.album > article{
+	margin: 25px;
+}
+.border{
+	padding: 10px;
+}
+.border a {
+	text-decoration: none;
+	color: white;
+	background-color: #9500e6;
+	padding: 10px;
+	border-radius: 10px;
+}
+.nome{
+	text-align: center;
+}
+footer{
+	background-color: #fff;
+	text-align: center;
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cadnot.css">
+    <script src="cadcate.js"></script>
+    <title>Document</title>
+</head>
+<body page = 'lista'>
+    <header>
+        <div class="principal">
+            <h1 class="titulo">Fofocando com João</h1> 
+            <img class="logo" src="https://cdn-icons-png.flaticon.com/512/2452/2452805.png" alt="notícias" height="50" width="50">
+        </div>
+        <nav class="menu">
+            <ul>
+                <li><a href="musica.html" Target="_blank">Notícias recentes</a></li>
+                <li><a href="famosos.html" Target="_blank">Outras notícias</a></li>
+                <li class="oi">
+                    <a class="horizontal" href="#">Adiministrador</a>
+                    <ul class="fixo">
+                       <li><a href="cadnot.html">Noticias</a></li>
+                       <li><a href="cadcate.html">Categoria</a></li>
+                    </ul>  
+                </li>  
+            </ul>
+        </nav>
+    </header>
+    </header>
+    <main>
+        <h1>Cadastrar Categoria</h1>
+        <section>
+            <div id="listaRegistro">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Categoria</th>
+                            <th>Edição</th>
+                        </tr>
+                    </thead>
+                    <tbody id="listaRegistrosBody"></tbody>
+                </table>
+                <div>
+                    <button onclick="vizualizar('cadastro', true)">Nova Categoria</button>
+                </div>
+            </div>
+            <form id="cadastroRegistro">
+                <label>ID
+                    <input type="number" readonly id="id">
+                </label>
+                <label>Categoria
+                    <input type="text" id="categoria">
+                </label>
+                <div class="botao">
+                    <button>Salvar</button>
+                    <button onclick="vizualizar('lista')" type="button">Cancelar</button>
+                </div>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
